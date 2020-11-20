@@ -1,5 +1,5 @@
 {% set name = "libmodulemd" %}
-{% set version = "2.9.4" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/fedora-modularity/libmodulemd/releases/download/libmodulemd-{{ version }}/modulemd-{{ version }}.tar.xz
-  sha256: cb86b1dad4f1578895225ba4ee435dbb7d75262898f69a08507b01759bfc81ab
+  sha256: 8872c28b9f7bd39c5b44b82c8d265011c368b2256bf6d9766f0d216af42f7ada
 
 build:
   number: 0
@@ -44,7 +44,7 @@ about:
   home: https://github.com/fedora-modularity/libmodulemd
   license: MIT
   license_file: COPYING
-  summary: 'C Library for manipulating module metadata files'
+  summary: C Library for manipulating module metadata files
   doc_url: https://github.com/fedora-modularity/libmodulemd#libmodulemd
   dev_url: https://github.com/fedora-modularity/libmodulemd
 
