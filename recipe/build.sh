@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-meson build -Dwith_docs=false -Ddeveloper_build=false --prefix="${PREFIX}" --libdir="${PREFIX}/lib"
+meson build -Dwith_docs=false --prefix="${PREFIX}" --libdir="${PREFIX}/lib"
 
 ninja -C build
 
