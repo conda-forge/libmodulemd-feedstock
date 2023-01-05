@@ -1,16 +1,16 @@
 {% set name = "libmodulemd" %}
-{% set version = "2.12.0" %}
+{% set version = "2.14.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/fedora-modularity/libmodulemd/releases/download/libmodulemd-{{ version }}/modulemd-{{ version }}.tar.xz
-  sha256: 98646094948c1dfa8810688036105e91841bf8f5fcba983f0ccac8855b3a0e3d
+  url: https://github.com/fedora-modularity/libmodulemd/releases/download/{{ version }}/modulemd-{{ version }}.tar.xz
+  sha256: 8087942cc290c0df486931233446fb4bce786cd9ff92eb72384731cd4d36f6ef
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win or osx]
 
 requirements:
