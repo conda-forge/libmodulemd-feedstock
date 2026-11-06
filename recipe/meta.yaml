@@ -1,5 +1,5 @@
 {% set name = "libmodulemd" %}
-{% set version = "2.15.3" %}
+{% set version = "2.15.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/fedora-modularity/libmodulemd/releases/download/{{ version }}/modulemd-{{ version }}.tar.xz
-  sha256: 931b44eabdd5f7d170803f3476397c8e9dea07209589e1194ff8379429991ccb
+  sha256: f72adc9189eebc4861da1beb24330971e51b855898c913909d90ed57476be4f7
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or osx]
 
 requirements:
